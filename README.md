@@ -1,4 +1,4 @@
 # Burger Application :hamburger::fries:
 
 ## Overview
-My burger logger application that uses MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate my HTML.
+Checkout my burger logger application that uses MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate my HTML.
