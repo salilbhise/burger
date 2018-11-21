@@ -1,5 +1,15 @@
-// Set up MySQL connection.
-//var mysql = require('mysql');
-//require('dotenv').config()
+var mysql = require('mysql');
+var connection;
 
-//module.exports = connection;
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password:'password',
+        database: 'burgers_db'
+
+    });
+}
+
+connection.connect();
+module.exports = connection;
