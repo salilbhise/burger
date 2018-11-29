@@ -30,22 +30,7 @@ app.set("view engine", "handlebars");
 
 //     });
 // }
-console.log(process.env.HOST, "this should be the host");
 
-var connection = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    port: 3306,
-    password: process.env.PASSWORD,
-    database: process.env.DATA_BASE
-});
-
-
-connection.connect(function(err){
-    if (err) throw err;
-
-    console.log('Connected');
-});
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgers_controller.js");
